@@ -41,6 +41,9 @@ WHERE EMAIL = 'cliente@cliente.com' AND SENHA = 'cliente';
 
 ----------------------------
 
+SELECT USUARIOS.idUsuario, USUARIOS.Email, USUARIOS.Senha, USUARIOS.Permissao FROM USUARIOS
+WHERE EMAIL = 'admin@admin.com' AND SENHA = 'admin;';
+
 --Buscar um jogo por idJogo;
 SELECT * FROM JOGOS
 WHERE JOGOS.IdJogo = 3;

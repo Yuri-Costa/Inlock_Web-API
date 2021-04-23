@@ -18,8 +18,8 @@ VALUES			   ('Blizzard'),
 --mundialmente em 26 de outubro de 2018. E o jogo custa R$ 120,00;
 
 INSERT INTO JOGOS (nomeJogo, Descricao, dataLancamento, Preco, IdEstudio)
-VALUES				('Diablo 3', 'È um jogo que contém bastante ação e é viciante, seja você um novato ou um fã', '2012/05/15', 99.00, 1 ),
-					('Red Dead Redemption II', 'Jogo eletrônico de ação-aventura western', '2018/10/26', 120.00, 2 );
+VALUES				('Diablo 3', 'È um jogo que contém bastante ação e é viciante, seja você um novato ou um fã', '20120515 10:34:09 AM', 99.00, 1 ),
+					('Red Dead Redemption II', 'Jogo eletrônico de ação-aventura western', '20181026 10:34:09 AM', 120.00, 2 );
 					SELECT * FROM JOGOS;
 
 ------------------------------------------------------------------------------------------
@@ -37,6 +37,6 @@ VALUES						  ('ADMINISTRADOR'),
 --Inserir um usuário do tipo CLIENTE que tenha o e-mail igual a
 --cliente@cliente.com e a senha igual a cliente;
 
-INSERT INTO USUARIOS (Email, Senha, idTipoUsuario)
-VALUES				 ('admin@admin.com', 'admin;', 1),
-					 ('cliente@cliente.com', 'cliente', 2);
+INSERT INTO USUARIOS (Email, Senha, Permissao, idTipoUsuario)
+VALUES				 ('admin@admin.com', 'admin;', 'ADMINISTRADOR', 1),
+					 ('cliente@cliente.com', 'cliente', 'CLIENTE', 2);

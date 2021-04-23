@@ -16,7 +16,7 @@ CREATE TABLE JOGOS
 	IdJogo					INT PRIMARY KEY IDENTITY,
 	nomeJogo				VARCHAR(200),
 	Descricao				VARCHAR(200),
-	dataLancamento			DATE,
+	dataLancamento			DATETIME,
 	Preco					SMALLMONEY,
 	IdEstudio				INT	FOREIGN KEY REFERENCES ESTUDIO(IdEstudio)
 );
@@ -34,6 +34,6 @@ CREATE TABLE USUARIOS
 	idUsuario				INT PRIMARY KEY IDENTITY,
 	Email					VARCHAR(200) NOT NULL,
 	Senha					VARCHAR(200) NOT NULL,
+	Permissao				VARCHAR(200),
 	idTipoUsuario			INT	FOREIGN KEY REFERENCES TIPOS_DE_USUARIOS(idTipoUsuario)
-
 );
